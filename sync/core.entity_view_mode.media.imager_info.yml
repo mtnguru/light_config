@@ -1,0 +1,14 @@
+uuid: 769c6810-b8e8-41f2-aae9-07db725f18f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: "Defines content of the Information popup when viewing an image with the Imager viewer.\r\n"
+id: media.imager_info
+label: 'Imager Info'
+targetEntityType: media
+cache: true

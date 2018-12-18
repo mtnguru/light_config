@@ -1,0 +1,25 @@
+uuid: 16d77f7f-3f7f-4a37-828f-3d0255d30111
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sa_neato
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: sa_neato_branding
+theme: sa_neato
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

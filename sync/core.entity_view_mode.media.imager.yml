@@ -1,0 +1,14 @@
+uuid: 830dea2e-a583-4877-8d31-3483ba198fe9
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.imager
+label: Imager
+targetEntityType: media
+cache: true

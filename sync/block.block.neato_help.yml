@@ -1,0 +1,22 @@
+uuid: 6ad8d115-0f2b-424e-8210-859c102d8e7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - neato
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: neato_help
+theme: neato
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

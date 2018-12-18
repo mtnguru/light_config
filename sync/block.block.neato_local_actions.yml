@@ -1,0 +1,20 @@
+uuid: 553a2653-b551-494e-9b38-ef8ed732881a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - neato
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: neato_local_actions
+theme: neato
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

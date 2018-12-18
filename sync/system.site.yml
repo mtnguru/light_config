@@ -1,0 +1,14 @@
+uuid: 195c5d4d-1407-409a-90a5-495c95f0cc68
+name: admin
+mail: light@ecosleuth.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

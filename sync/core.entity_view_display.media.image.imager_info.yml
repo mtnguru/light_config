@@ -1,0 +1,64 @@
+uuid: f11f57c5-9749-4a81-8f7f-d9a4f2e11df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.imager_info
+    - field.field.media.image.field_description
+    - field.field.media.image.field_f
+    - field.field.media.image.field_height
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_width
+    - field.field.media.image.image
+    - media.type.image
+  module:
+    - text
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.imager_info
+targetEntityType: media
+bundle: image
+mode: imager_info
+content:
+  field_description:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_height:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_width:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_f: true
+  field_media_in_library: true
+  field_mime_type: true
+  image: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,85 @@
+uuid: b60b4c82-b05a-474f-8cf5-6f855e65cb7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_description
+    - field.field.media.image.field_f
+    - field.field.media.image.field_height
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_width
+    - field.field.media.image.image
+    - media.type.image
+  module:
+    - imager
+    - text
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_description:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_f:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_height:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_mime_type:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_width:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  image:
+    type: imager_formatter
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      imager_style: medium
+      imager_mode: popup
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_in_library: true
+  thumbnail: true
+  uid: true
