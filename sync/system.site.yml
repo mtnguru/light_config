@@ -1,11 +1,11 @@
 uuid: 195c5d4d-1407-409a-90a5-495c95f0cc68
-name: admin
+name: 'EcoSleuth - Imager Module Demo Site'
 mail: light@ecosleuth.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /media
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

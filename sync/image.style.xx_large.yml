@@ -1,0 +1,15 @@
+uuid: 2e001600-bf3a-4451-b1a9-8553c2051578
+langcode: en
+status: true
+dependencies: {  }
+name: xx_large
+label: 'XX Large (1024x1024)'
+effects:
+  2c2dd129-257a-4aea-b18e-acdc25ae3435:
+    uuid: 2c2dd129-257a-4aea-b18e-acdc25ae3435
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 1024
+      upscale: false

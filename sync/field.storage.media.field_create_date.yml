@@ -1,17 +1,17 @@
-uuid: 82129012-d88f-4001-82da-9cc7b6a5b941
+uuid: 56de03a3-948c-4ce8-a449-e6c08b562bdb
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - media
-    - text
-id: media.field_f
-field_name: field_f
+id: media.field_create_date
+field_name: field_create_date
 entity_type: media
-type: text
+type: datetime
 settings:
-  max_length: 255
-module: text
+  datetime_type: datetime
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

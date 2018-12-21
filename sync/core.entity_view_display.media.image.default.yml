@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_create_date
     - field.field.media.image.field_description
-    - field.field.media.image.field_f
+    - field.field.media.image.field_file_size
     - field.field.media.image.field_height
     - field.field.media.image.field_media_in_library
     - field.field.media.image.field_mime_type
@@ -12,6 +13,7 @@ dependencies:
     - field.field.media.image.image
     - media.type.image
   module:
+    - datetime
     - imager
     - text
 _core:
@@ -21,22 +23,33 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  field_create_date:
+    weight: 1
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_description:
+    weight: 5
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_file_size:
     weight: 4
     label: inline
-    settings: {  }
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
     third_party_settings: {  }
-    type: text_default
-    region: content
-  field_f:
-    weight: 3
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
+    type: number_integer
     region: content
   field_height:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       thousand_separator: ''
@@ -45,7 +58,7 @@ content:
     type: number_integer
     region: content
   field_mime_type:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link_to_entity: false
@@ -53,7 +66,7 @@ content:
     type: string
     region: content
   field_width:
-    weight: 1
+    weight: 2
     label: inline
     settings:
       thousand_separator: ''
@@ -63,11 +76,11 @@ content:
     region: content
   image:
     type: imager_formatter
-    weight: 6
+    weight: 7
     region: content
     label: hidden
     settings:
-      imager_style: medium
+      imager_style: x_large
       imager_mode: popup
     third_party_settings: {  }
   name:

@@ -4,12 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.thumbnail
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_file_size
+    - field.field.media.image.field_height
     - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_width
     - field.field.media.image.image
-    - image.style.medium
     - media.type.image
   module:
-    - image
+    - imager
 _core:
   default_config_hash: Gb3qN_HZzqfFf4728OIYBwnMVryxUzlsWkmOY56idC8
 id: media.image.thumbnail
@@ -18,17 +23,23 @@ bundle: image
 mode: thumbnail
 content:
   image:
-    type: image
+    type: imager_formatter
     weight: 0
     label: hidden
     settings:
-      image_style: medium
-      image_link: ''
+      imager_style: medium
+      imager_mode: popup
     third_party_settings: {  }
     region: content
 hidden:
   created: true
+  field_create_date: true
+  field_description: true
+  field_file_size: true
+  field_height: true
   field_media_in_library: true
+  field_mime_type: true
+  field_width: true
   name: true
   thumbnail: true
   uid: true
